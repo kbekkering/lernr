@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<h1>Learn A Language</h1>
+
+<table>
+  <% phrases.forEach(function(phrase){ %>
+    <tr>
+      <td><%= phrase.german %></td>
+      <td><%= phrase.english %></td>
+    </tr>
+  <% }) %>
+</table>
+
+<% include partials/footer %>
